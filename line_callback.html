@@ -1,0 +1,91 @@
+<!-- line_callback.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE Login Callback</title>
+</head>
+
+<body>
+    <script>
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+        }
+
+        function getUserProfile(accessToken) {
+            const profileURL = 'https://api.line.me/v2/profile';
+
+            fetch(profileURL, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`
+                },
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const displayName = data.displayName;
+                    console.log('ชื่อผู้ใช้: ', displayName)
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('เกิดข้อผิดพลาดในการขอข้อมูลผู้ใช้: ', error);
+                });
+        }
+
+        const code = getURLParameter('code');
+        const state = getURLParameter('state');
+
+        if (code && state) {
+            // ตั้งค่า Channel ID และ Channel Secret ที่ได้รับจาก LINE Developer
+            const channelID = '2000195510';
+            const channelSecret = 'b70c30ed9031a3cb0fa5d224429be49b';
+
+            // ตั้งค่า callback URL ที่ LINE Login API ใน LINE Developer Console
+            const callbackURL = 'http://localhost:5501/line_callback.html';
+
+            // สร้าง URL สำหรับการร้องขอ Access Token จาก Authorization Code
+            const tokenURL = 'https://api.line.me/oauth2/v2.1/token';
+            const data = new URLSearchParams();
+            data.append('grant_type', 'authorization_code');
+            data.append('code', code);
+            data.append('redirect_uri', callbackURL);
+            data.append('client_id', channelID);
+            data.append('client_secret', channelSecret);
+
+            // ทำการร้องขอ Access Token
+            fetch(tokenURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: data,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // เมื่อได้รับ Access Token และ ID Token
+                    const accessToken = data.access_token;
+                    const idToken = data.id_token;
+
+                    getUserProfile(accessToken)
+
+                    // ส่ง Access Token ไปยังเซิร์ฟเวอร์ของคุณเพื่อใช้งานต่อไป
+                    // หรือดำเนินการอื่นๆ ตามที่คุณต้องการกับข้อมูล Access Token และ ID Token นี้
+                    // ในตัวอย่างนี้เราจะแสดง Access Token และ ID Token ในหน้าเว็บ
+                    document.body.innerHTML = `
+          <h1>LINE Login Callback</h1>
+          <p>Access Token: ${accessToken}</p>
+          <p>ID Token: ${idToken}</p>
+        `;
+                })
+                .catch(error => {
+                    document.body.innerHTML = `<h1>Error: ${error.message}</h1>`;
+                });
+        } else {
+            document.body.innerHTML = `<h1>Error: Missing parameters.</h1>`;
+        }
+    </script>
+</body>
+
+</html>

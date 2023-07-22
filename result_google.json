@@ -1,0 +1,35 @@
+{
+    "uid": "TPUdjrbE5jdym4eA7j5VkoBd0YN2",
+    "displayName": "พงษ์ภัทร เภสัชชะ",
+    "photoURL": "https://lh3.googleusercontent.com/a/AAcHTtf03VeSo4qogV_nW6GQbaQy5eS0RSycwMT-hV6NvxxDLw=s96-c",
+    "email": "phongphat25512124@gmail.com",
+    "emailVerified": true,
+    "phoneNumber": null,
+    "isAnonymous": false,
+    "tenantId": null,
+    "providerData": [
+        {
+            "uid": "111594678830643625859",
+            "displayName": "พงษ์ภัทร เภสัชชะ",
+            "photoURL": "https://lh3.googleusercontent.com/a/AAcHTtf03VeSo4qogV_nW6GQbaQy5eS0RSycwMT-hV6NvxxDLw=s96-c",
+            "email": "phongphat25512124@gmail.com",
+            "phoneNumber": null,
+            "providerId": "google.com"
+        }
+    ],
+    "apiKey": "AIzaSyAhH6rNR5kk6idMgvp4MXcg272RRVggJhM",
+    "appName": "[DEFAULT]",
+    "authDomain": "ksongie.firebaseapp.com",
+    "stsTokenManager": {
+        "apiKey": "AIzaSyAhH6rNR5kk6idMgvp4MXcg272RRVggJhM",
+        "refreshToken": "AMf-vBys8fcgy6aD6WGDg6IDn2geAFs8Hk3nCcV2jCw0r5UTkOJ8--joi-Y484erUDBzd2etGWhDSeHvY38mQbzFj6V4qkb-cF7BtnljsLcTFH3m1riGYkQ3wZqvdrJDJaHXlnNYTEw8dWiIK8raLZwT2a9peULLmHWIPzJsPtGVHBw46180e75g9MG1gEv3CuJLIer0mmUNLGPevsPSPsF_aL0X1DIJ36H_B221MvgD4_E5BRSTMHky2cYhN_vsTPwVSP7GThTR75W70KBFE6LyCWURHwjolLb5qJEDVlBbwEiLihfD3waRC1O9gU_C7dIAJHklhJs85tm6_ZuYLOAKJEKfHVS1qrcOIwVtgOb-vtcgCLKMidjyKZyAO0UxZuygFwz6zR4Gqg_738LcPqW2siMS9xSDSC7ExoemsAjQMGGvBsUYK4Ml1gBWK1KmTJPFdP9UF72YK6ZxSy1HmLQQlMtf46WFGA",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE0ZWI4YTNiNjgzN2Y2MTU4ZWViNjA3NmU2YThjNDI4YTVmNjJhN2IiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoi4Lie4LiH4Lip4LmM4Lig4Lix4LiX4LijIOC5gOC4oOC4quC4seC4iuC4iuC4sCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQWNIVHRmMDNWZVNvNHFvZ1Zfblc2R1FiYVF5NWVTMFJTeWN3TVQtaFY2TnZ4eERMdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9rc29uZ2llIiwiYXVkIjoia3NvbmdpZSIsImF1dGhfdGltZSI6MTY4OTk4ODY0NywidXNlcl9pZCI6IlRQVWRqcmJFNWpkeW00ZUE3ajVWa29CZDBZTjIiLCJzdWIiOiJUUFVkanJiRTVqZHltNGVBN2o1VmtvQmQwWU4yIiwiaWF0IjoxNjg5OTg4NjQ3LCJleHAiOjE2ODk5OTIyNDcsImVtYWlsIjoicGhvbmdwaGF0MjU1MTIxMjRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMTE1OTQ2Nzg4MzA2NDM2MjU4NTkiXSwiZW1haWwiOlsicGhvbmdwaGF0MjU1MTIxMjRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.X3CrzjdEfbvzUZSxjx7H4PEiFz8rwTbOQHAT8Hv94BD5XyTpH64A3PZu1ovi4uU5iM6R3kIaq1LU1SpMv5Dc4WK8ya54jYWHU6AAr-jjOPqdlcfkq9Vhm3yfXh4WwEnLblNxnapkfxc-02fmeynNU55JsikJQwL-rpnPVKtxAPJiKTjOgUwSzxsMoutMYvFjRL7EB0LRaWeiL-C1EZH3VmUyJ2inPixOIGZEYoTJpQveMxcBFwr8Ec8e9Q0nJL8qlP1itFPbLWXQQlEiijxlPRT0M2PnwsKK9QqbKn-BqEVL7zqEn-_EUk6t_6luuzY7NELrdA1_MXgMInlPbtIOnQ",
+        "expirationTime": 1689992247680
+    },
+    "redirectEventId": null,
+    "lastLoginAt": "1689988647750",
+    "createdAt": "1689988136669",
+    "multiFactor": {
+        "enrolledFactors": []
+    }
+}
